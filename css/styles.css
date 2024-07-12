@@ -1,1 +1,68 @@
 /*ini css*/
+
+.main-title {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content {
+    flex: 1;
+    padding: 12px;
+}
+
+.input-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=number]:focus {
+    border: 3px solid #555;
+}
+
+form {
+    background-color: aliceblue;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.button {
+    height: 32px;
+    border-radius: 8px;
+}
+
+.submit {
+    background-color: aquamarine;
+    border: 2px solid aqua;
+}
+
+.reset {
+    background-color: white;
+    border: 2px solid aqua;
+}
+
+.result-section {
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
