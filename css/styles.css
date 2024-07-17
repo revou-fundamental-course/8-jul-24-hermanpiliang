@@ -1,20 +1,22 @@
 /*ini css*/
 
+/*ini style class main title header*/
 .main-title {
   text-align: center;
   font-size: x-large;
 }
 
+/*ini style main*/
 main {
   display: flex;
   justify-content: space-around;
 }
-
+/*ini style class main content*/
 .main-content {
   flex: 1;
   padding: 10px;
 }
-
+/*ini style class input title*/
 .input-title {
   font-size: 14px;
   font-weight: bold;
@@ -34,14 +36,14 @@ input[type=number] {
 input[type=number]:focus {
   border: 3px solid #555;
 }
-
+/*ini style class form*/
 .form {
   background-color: aliceblue;
   padding: 12px;
   border-radius: 8px;
  
 }
-
+/*ini style class calculate button*/
 .calculate {
   height: 32px;
   min-width: 25%;
@@ -54,7 +56,7 @@ input[type=number]:focus {
 #buttons {
   text-align: center;
 }
-
+/*ini style class button*/
 .button {
   height: 32px;
   min-width: 25%;
@@ -62,14 +64,14 @@ input[type=number]:focus {
   background-color: #2196F3;
   cursor: pointer;
 }
-
+/*ini style class button download*/
 .button-download {
   height: 32px;
   border-radius: 8px;
   background-color: #2196F3;
   cursor: pointer;
 }
-
+/*ini style class button konsul gizi*/
 .button-konsul-gizi {
   height: 32px;
   min-width: 25%;
@@ -77,7 +79,7 @@ input[type=number]:focus {
   background-color: #2196F3;
   cursor: pointer;
 }
-
+/*ini style class button regis ahli*/
 .button-regis-ahli {
   height: 32px;
   min-width: 25%;
@@ -85,7 +87,7 @@ input[type=number]:focus {
   background-color: #2196F3;
   cursor: pointer;
 }
-
+/*ini style class button konsul dokter*/
 .button-konsul-dokter {
   height: 32px;
   min-width: 25%;
@@ -93,7 +95,7 @@ input[type=number]:focus {
   background-color: #2196F3;
   cursor: pointer;
 }
-
+/*ini style class button regis now*/
 .button-regis-now {
   height: 32px;
   min-width: 25%;
@@ -101,7 +103,7 @@ input[type=number]:focus {
   background-color: #2196F3;
   cursor: pointer;
 }
-
+/*ini style class result*/
 .result {
   text-align: center;
   font-size: x-large;
@@ -120,18 +122,19 @@ input[type=number]:focus {
   border-radius: 50px;
   margin-bottom: 20px;
 }
+/*ini style comment result*/
 #comment {
   color: #4f7df9;
   font-weight: 800;
 }
 
-
+/*ini style class inputan age*/
 .input {
   background-color: white;
   font-size: xx-large;
   text-align: center;
 }
-
+/*ini style class inputan age*/
 .input input {
   outline: none;
   border: none;
@@ -142,7 +145,7 @@ input[type=number]:focus {
   font-size: 30px;
   font-family: "Nunito", sans-serif;
 }
-
+/*ini style class gender*/
 .gender {
   justify-content: space-around;
   align-items: center;
@@ -287,10 +290,6 @@ border: 2px solid red;
   color: #d41111; 
 }
 
-
-
-
-
 .linkDownload {
     position: fixed;
     background-color: #d12322;
@@ -305,12 +304,9 @@ border: 2px solid red;
     text-decoration: none;
     text-transform: capitalize;
     transition: all 0.43s ease-in-out;
-
-
   }
-
-  
-.linkDownload i {
+ 
+  .linkDownload i {
     padding-left: 7px;
   }
   
@@ -319,8 +315,9 @@ border: 2px solid red;
     background-color: black;
   }
 
-  @media screen and (max-width: 438px) {
-    main {
-      display: block;
-    }
+/*ini style responsive*/
+@media screen and (max-width: 438px) {
+  main {
+    display: block;
   }
+}

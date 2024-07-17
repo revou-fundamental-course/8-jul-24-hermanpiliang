@@ -1,4 +1,6 @@
+// display all variabel
 var age = document.getElementById("age");
+var gender = document.getElementById("gender");
 var height = document.getElementById("height");
 var weight = document.getElementById("weight");
 var male = document.getElementById("m");
@@ -7,19 +9,14 @@ var form = document.getElementById("form");
 let resultArea = document.querySelector(".comment");
 var resultComment = document.getElementById("result-comment");
 
-
-
-
-
+// selector content notis not null
 modalContent = document.querySelector(".modal-content");
 modalText = document.querySelector("#modalText");
 
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
- 
-
-
+// function calculate
 function calculate(){
  
   if(age.value=='' || height.value=='' || weight.value=='' || (male.checked==false && female.checked==false)){
@@ -33,7 +30,7 @@ function calculate(){
 }
 
 
-
+// function count BMI
 function countBmi(){
   var p = [age.value, height.value, weight.value];
   if(male.checked){
@@ -96,7 +93,7 @@ function countBmi(){
     Jika BMI Anda berada di atas 40, ini menunjukkan bahwa Anda termasuk dalam obesitas ekstrim. Ini merupakan kondisi yang sangat serius. Fokus pada pola makan sehat dan olahraga teratur. Dokter dapat memberikan terapi, obat-obatan, atau prosedur pembedahan. Pastikan untuk mengikuti saran medis dengan ketatTingkatkan aktivitas fisik dan pertimbangkan konsultasi dengan dokter.`;
      }
 
-    
+ // menampilkan result comment   
 resultArea.style.display = "block";
 document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
 document.querySelector("#result").innerHTML = bmi.toFixed(2);
@@ -106,18 +103,18 @@ document.querySelector("#result").innerHTML = bmi.toFixed(2);
 
 
 
-
+ // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
-
+// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
 
-
+// reset inputan dan result to default
 function reseting(){
     age.value="";
     height.value="";
@@ -131,5 +128,3 @@ function reseting(){
     resultComment.innerText="";
        
 }
-
-

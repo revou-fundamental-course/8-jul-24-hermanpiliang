@@ -1,114 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- By Ali Aslan -->
+
+  <!-- By Herman -->
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    
+    <!-- title web-->
     <title>BMI Calculator | Project RevoU</title>
   </head>
   <body>
+    <!-- header title -->
+    <header class="main-title"><h1>CALCULATOR BMI</h1></header>
+    
         <!-- main title -->
-        <header class="main-title"><h1>CALCULATOR BMI</h1></header>
-
     <main>
+      <!-- section kiri -->
       <section class="main-content">
         <p><h1>BMI <i>(Body Mass Index)</i></h1></p>
+
+        <!-- section article -->
         <section class="article">
           <article>
-            
               <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? <br>
                 Yuk, hitung sekarang di Kalkulator BMI.</p>
           </article>
         </section>
-                
+        
+        <!-- section form -->
         <section class="form">
+          <!-- inputan -->
           <div class="input">
-              <label for="age">Your Age (th)</label><br>
-              <input type="text" class="text-input" id="age" autocomplete="off" required/>
+            <!-- inputan age -->
+            <label for="age">Your Age (th)</label><br>
+            <input type="text" class="text-input" id="age" autocomplete="off" required/>
           </div>
-            
+          <!-- inputan gender --> 
           <div class="gender">
-              <label><h1>Gender</h1></label>
-              <label class="container">
-                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
-                    <span class="checkmark"></span>
-              </label>
-
-
-              <label class="container">
-                    <input type="radio" name="radio" id="f" ><p class="text">Female</p>
-                      <span class="checkmark"></span>
-              </label>
+            <label><h1>Gender</h1></label>
+            <!-- container radio man checkmark -->
+            <label class="container">
+              <input type="radio" name="radio" id="m"><p class="text">Male</p>
+              <span class="checkmark"></span>
+            </label>
+            <!-- container radio woman checkmark -->
+            <label class="container">
+              <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+              <span class="checkmark"></span>
+            </label>
           </div>
-          
+          <!-- inputan height --> 
           <div class="containerHW">
             <div class="inputH">
               <label for="height"><h1>Height(cm)<h1></label>
               <input type="number" id="height" required>
             </div>
-
+            <!-- inputan weight --> 
             <div class="inputW">
               <label for="weight"><h1>Weight(kg)<h1></label>
               <input type="number" id="weight" required>
             </div>
           </div>
           
-            <div id="buttons">
-              <button class="calculate" id="submit" onclick="calculate();">Hitung BMI</button>
-              <button class="calculate" id="resetbtn" onclick="reseting();">Reset</button>
-            </div><br>
-          
+          <!-- process button --> 
+          <div id="buttons">
+            <button class="calculate" id="submit" onclick="calculate();">Hitung BMI</button>
+            <button class="calculate" id="resetbtn" onclick="reseting();">Reset</button>
+          </div><br>       
         </section>
-          <section>
-            <header>
-                <h2>Keunggulan Fitur</h2>
-            </header>
 
-            <article>
-                <ol>
-                  <li>Menghitung Berat Badan</li>
-                  <li>Menentukan Kategori Berat badan Ideal atau Tidak</li>
-                  <li>Mempersiapkan Program Penurunan Berat Badan</li>
-                </ol>
-                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa(wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
-                <p>Kalkulator akan memberikan Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = kg/M<sup>2</sup>.</p>
-                
-            </article>
-          </section> 
+        <!-- section fitur --> 
+        <section>
+          <header>
+            <h2>Keunggulan Fitur</h2>
+          </header>
+          <!-- article information -->  
+          <article>
+            <ol>
+              <li>Menghitung Berat Badan</li>
+              <li>Menentukan Kategori Berat badan Ideal atau Tidak</li>
+              <li>Mempersiapkan Program Penurunan Berat Badan</li>
+            </ol>
+              <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa(wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+              <p>Kalkulator akan memberikan Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = kg/M<sup>2</sup>.</p>  
+          </article>
+        </section> 
       </section>
 
+      <!-- section kanan --> 
       <section class="main-content">
         <p><h1>RESULTS</h1></p>
+        <!-- Result--> 
         <div class="result">
-            <p><h1>Your BMI is</h1 ></p>
-            <div id="result">00.00</div>
-            <p class="comment"></p>
-            <div>
-              <a href="https://www.google.com/intl/id/forms/about/" target="blank"><button class="button-download">Download Hasil BMI</button></a>
-            </div>
+          <p><h1>Your BMI is</h1 ></p>
+          <div id="result">00.00</div>
+          <p class="comment"></p>
+          <!-- button download result --> 
+          <a href="https://www.google.com/intl/id/forms/about/" target="blank"><button class="button-download">Download Hasil BMI</button></a>
         </div>
-
+        <!-- article result comment-->   
         <article id="result-comment"></article>
 
+        <!-- section button comment konsul gizi-->
         <section>
           <div style="text-align: center"><br>
             <a href="https://www.halodoc.com/tanya-dokter/kategori/spesialis-gizi-klinik" target="blank"><button class="button-konsul-gizi">Konsultasi Ahli Gizi Via Aplikasi</button></a>
             <a href="https://www.halodoc.com/login" target="blank"><button class="button-regis-ahli">Registrasi Online Ahli Gizi</button></a>
           </div>
-            <div>
-              <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait  dengan berat badan Anda.</p>
-            </div>
+          <div>
+            <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait  dengan berat badan Anda.</p>
+          </div>
         </section>
           <!-- general information -->
         <section class="info-section">
-            <p>Beberapa penyakit yang berasal dari kegemukan</p>
-            <p>Diabetes<br>
-            Hipertensi<br>
-            Sakit Jantung<br>
-            Osteoarthritis</p>
+          <p>Beberapa penyakit yang berasal dari kegemukan</p>
+          <p>Diabetes<br>
+          Hipertensi<br>
+          Sakit Jantung<br>
+          Osteoarthritis</p>
           <div>
             <a href="https://www.halodoc.com/tanya-dokter" target="blank"><button class="button-konsul-dokter">Konsultasi Dokter Via Aplikasi</button></a>
             <a href="https://www.halodoc.com/login" target="blank"><button class="button-regis-now">Registrasi Online Sekarang</button></a>
@@ -117,15 +127,14 @@
         
         <!-- aplikasi info -->
         <section class="aplikasi-info">
-            <p>Download Aplikasi</p>
-            <div><br>
-              <a href="https://play.google.com/store/apps/details?id=com.linkdokter.halodoc.android&hl=in" target="blank"><img src="google-play.jpg" alt="play-store" width="193" height="62"></a>
-              <a href="https://apps.apple.com/id/app/halodoc-dokter-obat/id1067217981?l=id" target="blank"><img src="app-store.jpg" alt="app-store" width="180" height="62"></a>
-            
-            </div>
+          <p>Download Aplikasi</p>
+          <div><br>
+            <a href="https://play.google.com/store/apps/details?id=com.linkdokter.halodoc.android&hl=in" target="blank"><img src="google-play.jpg" alt="play-store" width="193" height="62"></a>
+            <a href="https://apps.apple.com/id/app/halodoc-dokter-obat/id1067217981?l=id" target="blank"><img src="app-store.jpg" alt="app-store" width="180" height="62"></a>
+          </div>
         </section>  
       </section>
-         <!-- The Modal -->
+      <!-- The Modal -->
       <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
@@ -134,7 +143,7 @@
         </div>
       </div> 
       
-
+      <!-- this is script js-->
       <script src="js/scripts.js"></script>
 
     </main>
