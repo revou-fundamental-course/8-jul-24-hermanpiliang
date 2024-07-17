@@ -22,8 +22,8 @@ main {
 
 input[type=number] {
   width: 100%;
-  padding: 10px 20px;
-  font-size: 30px;
+  padding: 10px 30px;
+  font-size: 20px;
   box-sizing: border-box;
   border: 3px solid #ccc;
   -webkit-transition: 0.5s;
@@ -43,12 +43,60 @@ input[type=number]:focus {
 
 .calculate {
   height: 32px;
+  min-width: 25%;
   border-radius: 8px;
+  background-color: #2196F3;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+ 
 }
+
 
 .button {
   height: 32px;
+  min-width: 25%;
   border-radius: 8px;
+  background-color: #2196F3;
+  cursor: pointer;
+}
+
+.button-download {
+  height: 32px;
+  border-radius: 8px;
+  background-color: #2196F3;
+  cursor: pointer;
+}
+
+.button-konsul-gizi {
+  height: 32px;
+  min-width: 25%;
+  border-radius: 8px;
+  background-color: #2196F3;
+  cursor: pointer;
+}
+
+.button-regis-ahli {
+  height: 32px;
+  min-width: 25%;
+  border-radius: 8px;
+  background-color: #2196F3;
+  cursor: pointer;
+}
+
+.button-konsul-dokter {
+  height: 32px;
+  min-width: 25%;
+  border-radius: 8px;
+  background-color: #2196F3;
+  cursor: pointer;
+}
+
+.button-regis-now {
+  height: 32px;
+  min-width: 25%;
+  border-radius: 8px;
+  background-color: #2196F3;
+  cursor: pointer;
 }
 
 .result {
@@ -59,20 +107,38 @@ input[type=number]:focus {
   padding: 12px;
 }
 
+.result #result {
+  font-size: 36px;
+  font-weight: 900;
+  color: #4f7df9;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+#comment {
+  color: #4f7df9;
+  font-weight: 800;
+}
+
+
+
+
 .input {
   background-color: white;
-  font-size: x-large;
-    text-align: center;
+  font-size: xx-large;
+  text-align: center;
 }
 
 .input input {
   outline: none;
   border: none;
   border-bottom: 1px solid #4f7df9;
-  width: 80%;
-  
+  width: 30%;
+  height: 100px;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Nunito", sans-serif;
 }
 
@@ -160,4 +226,8 @@ input[type=number]:focus {
   text-align: center;
   border-radius: 8px;
   padding: 12px;
+}
+
+#resultComment{
+  font-size: larger;
 }
